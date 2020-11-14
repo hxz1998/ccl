@@ -56,3 +56,4 @@ add_executable(virtual_destructor virtual_destructor.cc)
 add_executable(call-virtual-in-constructor call-virtual-in-constructor.cc)
 
 add_executable(copy_object copy_object.cc)
+add_executable(auto_ptr_shared_ptr auto_ptr_shared_ptr.cc)

@@ -32,7 +32,7 @@ public:
 
     ~DeriveClass() override {
         cout << "delete driveclass" << endl;
-        delete count;
+        delete[] count;
     }
 };
 
@@ -60,7 +60,10 @@ public:
 };
 
 int main() {
-    BaseClass *obj = new DeriveClass(16);
-    delete obj;
+    {
+        BaseClass *obj = new DeriveClass(16);
+        BaseClass obj2(16);
+    }
+//    delete obj;
     return 0;
 }
